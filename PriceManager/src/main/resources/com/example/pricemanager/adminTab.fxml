@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pricemanager.controller.AdminTabController">
+   <children>
+      <TableView fx:id="table" layoutX="55.0" layoutY="140.0" prefHeight="422.0" prefWidth="590.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="84.0" text="id" />
+            <TableColumn fx:id="col_login" prefWidth="180.5" text="Логин" />
+            <TableColumn fx:id="col_role" prefWidth="150.5" text="Роль" />
+            <TableColumn fx:id="col_status" editable="false" prefWidth="174.0" text="Статус" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutY="31.0" prefHeight="59.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="doBannedButton" layoutX="504.0" layoutY="17.0" mnemonicParsing="false" onAction="#onClickDoBannedButton" prefHeight="25.0" prefWidth="139.0" text="Заблокировать" />
+            <Button fx:id="upToAdminButton" layoutX="53.0" layoutY="17.0" mnemonicParsing="false" onAction="#onClickUpToAdminButton" prefHeight="25.0" prefWidth="180.0" text="Назначить администратором" />
+            <Button fx:id="doActiveButton" layoutX="302.0" layoutY="17.0" mnemonicParsing="false" onAction="#onClickDoActiveButton" prefHeight="25.0" prefWidth="139.0" text="Разблокировать" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="search_field" layoutX="55.0" layoutY="97.0" prefHeight="25.0" prefWidth="404.0" promptText="Поиск по пользователям" />
+      <Button fx:id="saveButton" layoutX="489.0" layoutY="97.0" mnemonicParsing="false" onAction="#onClickSaveButton" prefHeight="25.0" prefWidth="156.0" text="Сохранить таблицу" />
+   </children>
+</AnchorPane>

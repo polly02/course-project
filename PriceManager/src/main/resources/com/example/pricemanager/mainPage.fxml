@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pricemanager.controller.MainPageController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="adminTabButton" layoutX="35.0" layoutY="435.0" mnemonicParsing="false" onAction="#onClickAdminTabButton" prefHeight="25.0" prefWidth="130.0" text="Управление" />
+            <Button fx:id="logoutButton" layoutX="35.0" layoutY="535.0" mnemonicParsing="false" onAction="#onClickLogoutButton" prefHeight="25.0" prefWidth="130.0" text="Выйти" />
+            <Button fx:id="companyTabButton" layoutX="35.0" layoutY="40.0" mnemonicParsing="false" onAction="#onClickCompanyTabButton" prefHeight="25.0" prefWidth="130.0" text="Компании" />
+            <Button fx:id="productTabButton" layoutX="35.0" layoutY="90.0" mnemonicParsing="false" onAction="#onClickProductTabButton" prefHeight="25.0" prefWidth="130.0" text="Продукты" />
+            <Button fx:id="saleTabButton" layoutX="35.0" layoutY="140.0" mnemonicParsing="false" onAction="#onClickSaleTabButton" prefHeight="25.0" prefWidth="130.0" text="Продажи" />
+            <Button fx:id="productionTabButton" layoutX="35.0" layoutY="190.0" mnemonicParsing="false" onAction="#onClickProductionTabButton" prefHeight="25.0" prefWidth="130.0" text="Производство" />
+            <Button fx:id="calculatorTabButton" layoutX="35.0" layoutY="240.0" mnemonicParsing="false" onAction="#onClickCalculatorTabButton" prefHeight="25.0" prefWidth="130.0" text="Калькулятор" />
+            <Line endX="-89.0" endY="412.0" layoutX="289.0" layoutY="188.0" startX="-89.0" startY="-188.0" />
+            <Button fx:id="personalTabButton" layoutX="35.0" layoutY="485.0" mnemonicParsing="false" onAction="#onClickPersonalTabButton" prefHeight="25.0" prefWidth="130.0" text="Личный кабинет" />
+            <Button fx:id="statisticTabButton" layoutX="35.0" layoutY="290.0" mnemonicParsing="false" onAction="#onClickStatisticTabButton" prefHeight="25.0" prefWidth="130.0" text="Графики изменений" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="wrapper" layoutX="200.0" prefHeight="600.0" prefWidth="700.0" />
+   </children>
+</AnchorPane>

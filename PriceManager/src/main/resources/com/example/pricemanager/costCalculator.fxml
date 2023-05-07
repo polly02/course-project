@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pricemanager.controller.CostCalculatorController">
+   <children>
+      <Button fx:id="calculateButton" layoutX="82.0" layoutY="351.0" mnemonicParsing="false" onAction="#onClickCalculateButton" prefHeight="45.0" prefWidth="146.0" text="Расcчитать">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="reportPane" layoutX="74.0" layoutY="66.0" prefHeight="260.0" prefWidth="463.0">
+         <children>
+            <TextField fx:id="materialsField" layoutX="7.0" layoutY="24.0" prefHeight="25.0" prefWidth="149.0" />
+            <Text layoutX="7.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На материалы:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="7.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На производство:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="productionField" layoutX="7.0" layoutY="84.0" />
+            <TextField fx:id="deprecationField" layoutX="7.0" layoutY="140.0" />
+            <Text layoutX="7.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Амортизация:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="288.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Прочие расходы:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="othersField" layoutX="288.0" layoutY="84.0" />
+            <Text layoutX="288.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="На зарплаты:">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="salaryField" layoutX="288.0" layoutY="24.0" prefHeight="25.0" prefWidth="149.0" />
+            <Text layoutX="7.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Итоговые издержки:">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="resultField" layoutX="213.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="350.0" layoutY="351.0" mnemonicParsing="false" onAction="#onClickSaveButton" prefHeight="45.0" prefWidth="185.0" text="Сохранить отчёт">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

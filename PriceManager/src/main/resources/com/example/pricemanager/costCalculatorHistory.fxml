@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pricemanager.controller.CostCalcHistoryController">
+   <children>
+      <TableView fx:id="table" layoutX="55.0" layoutY="84.0" prefHeight="375.0" prefWidth="590.0">
+         <columns>
+            <TableColumn fx:id="col_materials" prefWidth="95.0" text="Материалы" />
+            <TableColumn fx:id="col_production" prefWidth="106.5" text="Производство" />
+            <TableColumn fx:id="col_deprecation" prefWidth="94.5" text="Амортизация" />
+            <TableColumn fx:id="col_salary" editable="false" prefWidth="82.0" text="Зарплаты" />
+            <TableColumn fx:id="col_others" prefWidth="84.0" text="Прочие" />
+            <TableColumn fx:id="col_result" prefWidth="127.0" text="Результат" />
+         </columns>
+      </TableView>
+      <Button layoutX="519.0" layoutY="34.0" mnemonicParsing="false" onAction="#onClickClearHistoryButton" prefHeight="25.0" prefWidth="126.0" text="Очистить историю" />
+   </children>
+</AnchorPane>
