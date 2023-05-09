@@ -1,1 +1,1 @@
-# cursovoyproject
+# course-project
